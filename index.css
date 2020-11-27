@@ -1,5 +1,8 @@
+html {
+    background: #6dd5fa; /* overscroll */
+}
 body {
-    background: #2980b9; /* fallback for old browsers */
+    background: #6dd5fa; /* fallback for old browsers */
     background: -webkit-linear-gradient(45deg, #2980b9, #6dd5fa, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(45deg, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
