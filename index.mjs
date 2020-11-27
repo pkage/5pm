@@ -1,7 +1,5 @@
 import {DateTime, Duration} from 'https://moment.github.io/luxon/es6/luxon.js';
 
-window.DateTime = DateTime
-
 // one hour in milliseconds
 const ONE_HOUR = 1000 * 60 * 60
 
@@ -60,7 +58,7 @@ const update = () => {
         .innerText = `${time.hour % 12}:${time.minute < 10 ? '0' + time.minute : time.minute} ${time.hour > 12 ? 'pm' : 'am'} (UTC${offset > 0 ? '+' : ''}${offset})`
         
 
-    setTimeout(update, 1000 * 30)
+    setTimeout(update, 1000)
 }
 
 window.onload = update()
