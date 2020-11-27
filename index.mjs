@@ -57,7 +57,7 @@ const update = () => {
         .innerText = `in ${place}`
 
     document.querySelector('#time')
-        .innerText = `${time.hour % 12}:${time.minute} ${time.hour > 12 ? 'pm' : 'am'} (UTC${offset > 0 ? '+' : ''}${offset})`
+        .innerText = `${time.hour % 12}:${time.minute < 10 ? '0' + time.minute : time.minute} ${time.hour > 12 ? 'pm' : 'am'} (UTC${offset > 0 ? '+' : ''}${offset})`
         
 
     setTimeout(update, 1000 * 30)
