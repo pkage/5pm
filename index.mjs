@@ -27,7 +27,7 @@ const zones = {
       '8': 'Hong Kong',
       '9': 'Seoul, South Korea',
      '10': 'Sydney, Australia',
-     '11': 'Port Moresby, Papua New Gunea',
+     '11': 'Port Moresby, Papua New Guinea',
      '12': 'Auckland, New Zealand'
 }
 
