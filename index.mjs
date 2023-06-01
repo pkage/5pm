@@ -31,9 +31,12 @@ const get5pm = async () => {
 const update = async () => {
     const fivepms = await get5pm()
 
-    // eventually should pick one per day
-    const zone = fivepms[0]
+    // get a random one based on the day of the month
+    // this kind of works, zones with more than ~30 zones
+    // skip some forever but i think it's fine
+    let idx = DateTime.now().day % fivepms.length
 
+    const zone = fivepms[idx]
     const time = DateTime.utc().setZone(zone.iana)
 
     document.querySelector('#where')
